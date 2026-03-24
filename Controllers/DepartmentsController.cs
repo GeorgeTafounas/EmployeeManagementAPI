@@ -17,14 +17,14 @@ namespace EmployeeManagementAPI.Controllers
             _context = context;
         }
 
-        /// <summary>Returns all departments from the database.</summary>
+        // Returns all departments from the database.
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Department>>> GetAll()
         {
             return await _context.Departments.ToListAsync();
         }
 
-        /// <summary>Returns a single department by its ID.</summary>
+        // Returns a single department by its ID.>
         [HttpGet("{id}")]
         public async Task<ActionResult<Department>> GetById(int id)
         {
@@ -33,7 +33,7 @@ namespace EmployeeManagementAPI.Controllers
             return department;
         }
 
-        /// <summary>Creates a new department and saves it to the database.</summary>
+        // Creates a new department and saves it to the database.
         [HttpPost]
         public async Task<ActionResult<Department>> Create(Department department)
         {
@@ -42,7 +42,7 @@ namespace EmployeeManagementAPI.Controllers
             return CreatedAtAction(nameof(GetById), new { id = department.Id }, department);
         }
 
-        /// <summary>Updates an existing department matched by ID.</summary>
+        // Updates an existing department matched by ID.
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Department department)
         {
@@ -64,7 +64,7 @@ namespace EmployeeManagementAPI.Controllers
             return NoContent();
         }
 
-        /// <summary>Deletes a department by its ID.</summary>
+        // Deletes a department by its ID.
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
