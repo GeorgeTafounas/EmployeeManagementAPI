@@ -14,5 +14,23 @@ namespace EmployeeManagementAPI.Data
 
         // Maps to the Employees table in SQL Server.
         public DbSet<Employee> Employees { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Enforce unique constraint on Department Name
+            modelBuilder.Entity<Department>()
+                .HasIndex(d => d.Name)
+                .IsUnique();
+
+            // Enforce unique constraint on Employee Email
+            modelBuilder.Entity<Employee>()
+                .HasIndex(e => e.Email)
+                .IsUnique();
+
+            // Set decimal precision for Salary to avoid truncation warning
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Salary)
+                .HasColumnType("decimal(18,2)");
+        }
     }
 }
