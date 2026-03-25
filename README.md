@@ -1,6 +1,7 @@
 # Employee Management API
 
-A RESTful API built with ASP.NET Core 8 and Entity Framework Core for managing Employees and Departments.
+A RESTful API built with ASP.NET Core Web API and Entity Framework Core 
+for managing Employees and Departments.
 
 ## Tech Stack
 - ASP.NET Core Web API (.NET 9)
@@ -20,8 +21,8 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123!" \
   -p 1433:1433 --name sqlserver \
   -d mcr.microsoft.com/mssql/server:2022-latest
 
-## .NET Version Note
 
+## .NET Version Note
 The task specification required .NET 5. However, this project was developed 
 on a Mac M2 (Apple Silicon), which does not support .NET 5 as it has no 
 native ARM64 compatibility. For this reason, .NET 9 was used instead, which 
