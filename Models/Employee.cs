@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace EmployeeManagementAPI.Models
 {
     /// Represents an employee record in the system.
@@ -6,16 +8,27 @@ namespace EmployeeManagementAPI.Models
         // Primary key — auto incremented by the database.
         public int Id { get; set; }
 
-        // Full name of the employee.
-        public string Name { get; set; } = string.Empty;
+        // First name of the employee — required field.
+        [Required(ErrorMessage = "First name is required.")]
+        public string FirstName { get; set; } = string.Empty;
 
-        // Job title or position of the employee.
-        public string Position { get; set; } = string.Empty;
+        // Last name of the employee — required field.
+        [Required(ErrorMessage = "Last name is required.")]
+        public string LastName { get; set; } = string.Empty;
 
-        // Employee's salary.
+        // Email address — required, must be unique and valid format.
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Email must be a valid format.")]
+        public string Email { get; set; } = string.Empty;
+
+        // Employee salary — required field.
+        [Required(ErrorMessage = "Salary is required.")]
+        [Range(0, double.MaxValue, ErrorMessage = "Salary must be a positive value.")]
         public decimal Salary { get; set; }
 
         // Foreign key — links this employee to a Department.
+
+        [Required(ErrorMessage = "DepartmentId is required.")]
         public int DepartmentId { get; set; }
 
         // Navigation property — the related Department object.
