@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/georgetafouna/EmployeeManagementAPI/EmployeeManagementAPI.csproj": {}
+    "/Users/georgetafouna/Desktop/EmployeeManagementAPI/EmployeeManagementAPI.csproj": {}
   },
   "projects": {
-    "/Users/georgetafouna/EmployeeManagementAPI/EmployeeManagementAPI.csproj": {
+    "/Users/georgetafouna/Desktop/EmployeeManagementAPI/EmployeeManagementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/georgetafouna/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
+        "projectUniqueName": "/Users/georgetafouna/Desktop/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
         "projectName": "EmployeeManagementAPI",
-        "projectPath": "/Users/georgetafouna/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
+        "projectPath": "/Users/georgetafouna/Desktop/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
         "packagesPath": "/Users/georgetafouna/.nuget/packages/",
-        "outputPath": "/Users/georgetafouna/EmployeeManagementAPI/obj/",
+        "outputPath": "/Users/georgetafouna/Desktop/EmployeeManagementAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/georgetafouna/.nuget/NuGet/NuGet.Config"

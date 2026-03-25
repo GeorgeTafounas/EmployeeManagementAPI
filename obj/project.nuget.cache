@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "57jaOw3j+dw=",
+  "dgSpecHash": "Bg9bz7XnGhI=",
   "success": true,
-  "projectFilePath": "/Users/georgetafouna/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
+  "projectFilePath": "/Users/georgetafouna/Desktop/EmployeeManagementAPI/EmployeeManagementAPI.csproj",
   "expectedPackageFiles": [
     "/Users/georgetafouna/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/georgetafouna/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
