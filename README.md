@@ -19,3 +19,11 @@ A RESTful API built with ASP.NET Core 8 and Entity Framework Core for managing E
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123!" \
   -p 1433:1433 --name sqlserver \
   -d mcr.microsoft.com/mssql/server:2022-latest
+
+## .NET Version Note
+
+The task specification required .NET 5. However, this project was developed 
+on a Mac M2 (Apple Silicon), which does not support .NET 5 as it has no 
+native ARM64 compatibility. For this reason, .NET 9 was used instead, which 
+is fully supported on Apple Silicon. All requirements have been fully 
+implemented as specified.
