@@ -20,7 +20,7 @@ for managing Employees and Departments.
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123!" \
   -p 1433:1433 --name sqlserver \
   -d mcr.microsoft.com/mssql/server:2022-latest
-
+```
 
 ## .NET Version Note
 The task specification required .NET 5. However, this project was developed 
